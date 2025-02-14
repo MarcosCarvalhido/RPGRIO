@@ -1,5 +1,30 @@
 .navBar {
-  /* text-decoration: none; */
-  color: red;
- 
+background-color: #0741AD;
+height: 100px;
+font-size: 1.5rem;
+}
+.navBar a{
+  color:white;
+  text-decoration: none;
+}
+.navBar a:hover{
+  opacity: 0.7;
+  color: white;
+}
+.navbarMobile{
+  background-color: #0741AD;
+  color: white;
+  font-size: 1.2rem;
+}
+.navbarMobile a{
+  color:white;
+  text-decoration: none;
+}
+.navbarMobile a:hover{
+  opacity: 0.7;
+  color: white;
+}
+.navBarButton{
+  color:red;
+  background-color: white !important;
 }
