@@ -30,6 +30,14 @@ function EventCard({ infos }: any) {
                 <li>Prototipos</li>
                 <li>Cardgames</li>
                 <li>BoardGames</li>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
               </ul>
             </ListGroup.Item>
           </ListGroup>
