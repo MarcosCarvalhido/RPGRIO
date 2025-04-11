@@ -7,7 +7,7 @@ function Home() {
   const [infos, setinfos] = useState([
     {
       nome: "Iniciativa RPG",
-      data: "13/04/25",
+      data: "13/04/2025",
       horario: "11:00 - 19:00",
       cidade: "Rio de Janeiro",
       bairro: "Tijuca",
@@ -16,7 +16,7 @@ function Home() {
     },
     {
       nome: "RPG RJ",
-      data: "09/03/25",
+      data: "09/03/2025",
       horario: "11:00 - 19:00",
       cidade: "Rio de Janeiro",
       bairro: "Tijuca",
@@ -25,7 +25,7 @@ function Home() {
     },
     {
       nome: "Iniciativa RPG",
-      data: "13/04/25",
+      data: "13/04/2025",
       horario: "11:00 - 19:00",
       cidade: "Rio de Janeiro",
       bairro: "Tijuca",
@@ -34,7 +34,7 @@ function Home() {
     },
     {
       nome: "RPG RJ",
-      data: "09/03/25",
+      data: "09/03/2025",
       horario: "11:00 - 19:00",
       cidade: "Rio de Janeiro",
       bairro: "Tijuca",

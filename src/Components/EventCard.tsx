@@ -1,5 +1,6 @@
 import { Card, ListGroup, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import CalendarButton from "./CalendarButton";
 function EventCard({ infos }: any) {
   return (
     <div className="card m-3" style={{ maxWidth: "700px" }}>
@@ -21,6 +22,7 @@ function EventCard({ infos }: any) {
             <Card.Text className="fw-bold">
               {infos.cidade}, {infos.bairro}
             </Card.Text>
+            <CalendarButton infos={infos}></CalendarButton>
           </Card.Body>
           <ListGroup className="list-group-flush">
             <ListGroup.Item>Numero de mesas: {infos.nMesas}</ListGroup.Item>
