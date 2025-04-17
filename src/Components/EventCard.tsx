@@ -35,7 +35,7 @@ function EventCard({ infos }: any) {
           </ListGroup>
           <Card.Body>
             <div className="d-grid gap-2">
-              <Link to={`/evento/${infos.nome}`}>
+              <Link to={`/${infos.nome}`}>
                 <Button variant="primary" size="lg" style={{ width: "100%" }}>
                   Ver Mais
                 </Button>
