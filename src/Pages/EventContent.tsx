@@ -1,12 +1,13 @@
-function EventContent({nome}: {nome: string}){
+import { useParams } from "react-router-dom";
 
-    return(
-        <div>
-            <h1>
-                CONTEUDO {nome}
-            </h1>
-        </div>
-    )
+function EventContent() {
+  const { nome } = useParams();
+
+  return (
+    <div>
+      <h1>CONTEUDO {nome}</h1>
+    </div>
+  );
 }
 
-export default EventContent
+export default EventContent;
