@@ -1,50 +1,92 @@
 import { Card, ListGroup, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./EventCard.css";
 function EventCard({ infos }: any) {
   return (
-    <div className="card m-3" style={{ maxWidth: "700px" }}>
-      <div className="row g-0 ">
-        {/* <div className="col-md-4  " style={{display: 'flex', justifyContent: 'center'}}> */}
-        <div className="col-md-4 my-auto  ">
-          <img
-            src="https://rpgrio.com.br/wp-content/uploads/2024/12/IniciativaRPG.png"
-            className="img-fluid rounded-start"
-            alt="..."
-          />
+    <div className="event-card">
+      {/* <!-- Imagem --> */}
+      <div className="card-image">
+        <img
+          src="https://rpgrio.com.br/wp-content/uploads/2024/12/IniciativaRPG.png"
+          alt="Imagem do evento"
+        />
+      </div>
+
+      {/* <!-- Conteúdo --> */}
+      <div className="card-content">
+        <div>
+          <h2 className="event-title">Iniciativa RPG</h2>
+          <p className="event-date">13/04/25 | 11:00 - 19:00</p>
+          <p className="event-location">Rio de Janeiro, Tijuca</p>
+
+          <p className="event-tables">Número de mesas: 19</p>
+
+          <div className="attractions-section">
+            <h3 className="attractions-title">Outras Atrações:</h3>
+            <ul className="attractions-list">
+              <li className="attraction-item">
+                <span className="attraction-bullet">•</span>
+                Protótipos
+              </li>
+              <li className="attraction-item">
+                <span className="attraction-bullet">•</span>
+                Cardgames
+              </li>
+              <li className="attraction-item">
+                <span className="attraction-bullet">•</span>
+                BoardGames
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="col-md-8">
-          <Card.Body>
-            <Card.Title>{infos.nome}</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">
-              {infos.data} | {infos.data}
-            </Card.Subtitle>
-            <Card.Text className="fw-bold">
-              {infos.cidade}, {infos.bairro}
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush">
-            <ListGroup.Item>Numero de mesas: {infos.nMesas}</ListGroup.Item>
-            <ListGroup.Item>
-              Outras Atrações:
-              <ul>
-                <li>Prototipos</li>
-                <li>Cardgames</li>
-                <li>BoardGames</li>
-              </ul>
-            </ListGroup.Item>
-          </ListGroup>
-          <Card.Body>
-            <div className="d-grid gap-2">
-              <Link to={`/${infos.nome}`}>
-                <Button variant="primary" size="lg" style={{ width: "100%" }}>
-                  Ver Mais
-                </Button>
-              </Link>
-            </div>
-          </Card.Body>
-        </div>
+
+        <button className="cta-button">Ver Mais</button>
       </div>
     </div>
+
+    // <div className="card m-3" style={{ maxWidth: "700px" }}>
+    //   <div className="row g-0 ">
+    //     {/* <div className="col-md-4  " style={{display: 'flex', justifyContent: 'center'}}> */}
+    //     <div className="col-md-4 my-auto  ">
+    //       <img
+    //         src="https://rpgrio.com.br/wp-content/uploads/2024/12/IniciativaRPG.png"
+    //         className="img-fluid rounded-start"
+    //         alt="..."
+    //       />
+    //     </div>
+    //     <div className="col-md-8">
+    //       <Card.Body>
+    //         <Card.Title>{infos.nome}</Card.Title>
+    //         <Card.Subtitle className="mb-2 text-muted">
+    //           {infos.data} | {infos.horario}
+    //         </Card.Subtitle>
+    //         <Card.Text className="fw-bold">
+    //           {infos.cidade}, {infos.bairro}
+    //         </Card.Text>
+    //       </Card.Body>
+    //       <ListGroup className="list-group-flush">
+    //         <ListGroup.Item>Numero de mesas: {infos.nMesas}</ListGroup.Item>
+    //         <ListGroup.Item>
+    //           Outras Atrações:
+    //           <ul>
+    //             <li>Prototipos</li>
+    //             <li>Cardgames</li>
+    //             <li>BoardGames</li>
+    //           </ul>
+    //         </ListGroup.Item>
+    //       </ListGroup>
+    //       <Card.Body>
+    //         <div className="d-grid gap-2">
+    //           <Link to={`/${infos.nome}`}>
+    //             <Button variant="primary" size="lg" style={{ width: "100%" }}>
+    //               Ver Mais
+    //             </Button>
+    //           </Link>
+    //         </div>
+    //       </Card.Body>
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
 

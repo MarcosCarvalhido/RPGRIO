@@ -1,0 +1,151 @@
+/* Card principal */
+.event-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 672px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+}
+
+/* Container da imagem */
+.event-card .card-image {
+  width: 100%;
+  height: 192px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Imagem */
+.event-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Conteúdo */
+.event-card .card-content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título */
+.event-card .event-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+/* Data */
+.event-card .event-date {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Localização */
+.event-card .event-location {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Número de mesas */
+.event-card .event-tables {
+  color: #1f2937;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Seção de atrações */
+.event-card .attractions-section {
+  margin-bottom: 20px;
+}
+
+/* Título das atrações */
+.event-card .attractions-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+/* Lista de atrações */
+.event-card .attractions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Item da lista */
+.event-card .attraction-item {
+  color: #4b5563;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+/* Bullet point */
+.event-card .attraction-bullet {
+  color: #f97316;
+  margin-right: 12px;
+}
+
+/* Botão */
+.event-card .cta-button {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.event-card .cta-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Media query para desktop - 768px ou maior */
+@media (min-width: 768px) {
+  .event-card {
+    flex-direction: row;
+  }
+
+  .event-card .card-image {
+    width: 192px;
+    height: auto;
+    align-self: stretch;
+  }
+
+  .event-card .card-image img {
+    object-position: left center;
+  }
+}
+
+/* Estilos de demo - removível */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
